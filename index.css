@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: url("./img/assistenciascorpion.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
+
+
+.container {
+    padding: 0px 50px;
+}
+
+
+nav {
+    padding: 10px 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+    padding: 16px;
+    margin: 0;
+
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+
+.center {
+    text-align: center;
+    margin-top: 30px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 5px solid #0066ff;
+
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.8);
+}
+
+
+h1 {
+    color: #008cff;
+    text-align: center;
+
+    font-size: 36px;
+    margin-bottom: 5px;
+
+    text-shadow: 2px 2px 5px black;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+
+    margin-top: 5px;
+    margin-bottom: 40px;
+
+    text-shadow: 2px 2px 5px black;
+}
+
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.70);
+
+    padding: 20px;
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+section h3 {
+    color: #008cff;
+    font-size: 24px;
+
+    margin-top: 0;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+    padding: 25px;
+
+    background-color: rgba(0, 0, 0, 0.75);
+
+    border-radius: 12px;
+}
+
+footer a {
+    margin: 0 20px;
+
+    text-align: center;
+
+    color: white;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: contain;
+
+    transition: 0.3s;
+}
+
+footer p {
+    margin: 5px 0 0;
+
+    font-weight: bold;
+}
+
+footer a:hover {
+    transform: scale(1.1);
+}
+
+footer img:hover {
+    transform: scale(1.15);
+}
