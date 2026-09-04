@@ -1,12 +1,13 @@
 body {
     margin: 0;
+    padding: 0;
+
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 
     background-image: url("assistenciascorpion.png");
-
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 
@@ -14,31 +15,39 @@ body {
 }
 
 
+/* CONTAINER */
+
 .container {
-    padding: 0px 50px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+
+/* MENU */
 
 nav {
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
-ul {
+nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 50px;
 
     list-style: none;
     padding: 16px;
     margin: 0;
 
-    background-color: rgba(0, 0, 0, 0.65);
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+
     font-weight: bold;
     font-size: 18px;
 
@@ -50,10 +59,15 @@ nav a:hover {
 }
 
 
+/* PARTE CENTRAL */
+
 .center {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 35px;
 }
+
+
+/* FOTO DO PERFIL */
 
 header img {
     width: 150px;
@@ -64,79 +78,197 @@ header img {
     border-radius: 50%;
     border: 5px solid #0066ff;
 
-    box-shadow: 0 0 20px rgba(0, 102, 255, 0.8);
+    box-shadow: 0 0 25px rgba(0, 102, 255, 0.9);
 }
 
+
+/* TITULOS */
 
 h1 {
     color: #008cff;
+
     text-align: center;
 
-    font-size: 36px;
+    font-size: 38px;
+
+    margin-top: 20px;
     margin-bottom: 5px;
 
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 6px black;
 }
 
 h2 {
+    color: white;
+
     text-align: center;
-    font-size: 20px;
+
+    font-size: 21px;
 
     margin-top: 5px;
     margin-bottom: 40px;
 
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 6px black;
 }
 
 
+/* CONTEUDO */
+
 main {
+    width: 100%;
     max-width: 900px;
+
     margin: 0 auto;
 }
 
+
+/* CARDS */
+
 section {
-    background-color: rgba(0, 0, 0, 0.70);
+    background-color: rgba(0, 0, 0, 0.78);
 
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 25px;
+    margin-bottom: 22px;
 
-    border-radius: 12px;
+    border-radius: 14px;
 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 140, 255, 0.3);
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
 }
 
 section h3 {
     color: #008cff;
-    font-size: 24px;
+
+    font-size: 25px;
+
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+section p {
+    color: #f1f1f1;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 12px;
+}
+
+
+/* CARDS DA PAGINA DE SERVICOS E VALORES */
+
+.servicos {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+.card-servico {
+    background-color: rgba(0, 0, 0, 0.82);
+
+    padding: 25px;
+
+    margin-bottom: 22px;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(0, 140, 255, 0.35);
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card-servico h3 {
+    color: #008cff;
+
+    font-size: 25px;
 
     margin-top: 0;
 }
 
-section p {
-    font-size: 16px;
-    line-height: 1.6;
+.card-servico p {
+    line-height: 1.7;
 }
 
+
+/* LISTA DE PRECOS */
+
+.lista-precos {
+    display: block;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    background: none;
+}
+
+.lista-precos li {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 14px 5px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.lista-precos li:last-child {
+    border-bottom: none;
+}
+
+.lista-precos strong {
+    color: #00aaff;
+
+    white-space: nowrap;
+}
+
+
+/* OBSERVAÇÃO */
+
+.observacao {
+    background-color: rgba(0, 0, 0, 0.85);
+
+    border: 1px solid rgba(0, 140, 255, 0.4);
+}
+
+.observacao h3 {
+    color: #00aaff;
+}
+
+
+/* RODAPE */
 
 footer {
     display: flex;
+
     justify-content: center;
     align-items: center;
 
+    gap: 40px;
+
     margin-top: 40px;
+    margin-bottom: 30px;
+
     padding: 25px;
 
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.82);
 
-    border-radius: 12px;
+    border-radius: 14px;
+
+    border: 1px solid rgba(0, 140, 255, 0.3);
 }
 
 footer a {
-    margin: 0 20px;
-
     text-align: center;
 
     color: white;
+
     text-decoration: none;
 
     transition: 0.3s;
@@ -152,15 +284,64 @@ footer img {
 }
 
 footer p {
-    margin: 5px 0 0;
+    margin: 6px 0 0;
 
     font-weight: bold;
 }
 
 footer a:hover {
-    transform: scale(1.1);
+    transform: translateY(-5px);
 }
 
 footer img:hover {
     transform: scale(1.15);
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 92%;
+    }
+
+    nav ul {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    header img {
+        width: 130px;
+        height: 130px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .lista-precos li {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 5px;
+    }
+
+    footer {
+        gap: 25px;
+    }
 }
